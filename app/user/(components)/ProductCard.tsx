@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardMedia, CardContent, Typography, Button, Box } from '@mui/material';
+import { useCart } from '../../(services)/CartContext';
 
 export interface BubbleTea {
   id: number;
@@ -20,6 +21,17 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ tea, onButtonClick, onRemoveClick, buttonText = 'Add to Cart' }) => {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = async () => {
+    await addToCart(tea.id, tea.name, tea.price);
+    onButtonClick?.();
+  };
+
+  const handleRemoveFromCart = () => {
+    // Could implement remove functionality here if needed
+    onRemoveClick?.();
+  };
   return (
     <Card sx={{ maxWidth: 345, width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', minHeight: 400 }}>
       {tea.assetPath && (
@@ -47,14 +59,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ tea, onButtonClick, onRemoveC
           variant="contained"
           color="primary"
           fullWidth
-          onClick={onButtonClick}
+          onClick={handleAddToCart}
         >
           {buttonText}
         </Button>
         <Button
           variant="outlined"
           fullWidth
-          onClick={onRemoveClick}
+          onClick={handleRemoveFromCart}
           sx={{
             bgcolor: 'white',
             borderColor: '#7B1FA2',

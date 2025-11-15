@@ -3,6 +3,7 @@ import InitColorSchemeScript from '@mui/material/InitColorSchemeScript';
 import { ThemeProvider } from '@mui/material/styles';
 import * as React from 'react';
 import { theme } from './theme';
+import { CartProvider } from './(services)/CartContext';
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
@@ -11,7 +12,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
         <InitColorSchemeScript attribute="class" />
         <ThemeProvider theme={theme}>
           <CssBaseline />
-          {props.children}
+          <CartProvider>{props.children}</CartProvider>
         </ThemeProvider>
       </body>
     </html>

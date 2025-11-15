@@ -18,6 +18,12 @@ export default function UserPage() {
     setBubbleTeas(bubbleTeasData);
   }, []);
 
+  // Prepare label ordering: Popular first, then the rest alphabetically by display name
+  const allLabels = Object.keys(LABEL_MAP);
+  const otherLabels = allLabels.filter((l) => l !== 'popular');
+  otherLabels.sort((a, b) => LABEL_MAP[a].localeCompare(LABEL_MAP[b]));
+  const orderedLabels = allLabels.includes('popular') ? ['popular', ...otherLabels] : otherLabels;
+
   return (
     <Container sx={{ pt: 10 }}>
       <AppBar position="fixed">
@@ -34,8 +40,8 @@ export default function UserPage() {
           </Button>
         </Toolbar>
       </AppBar>
-      {/* Render a SessionBoard for every label defined in LABEL_MAP */}
-      {Object.keys(LABEL_MAP).map((lbl) => (
+      {/* Render a SessionBoard for every label defined in LABEL_MAP (Popular first, then alphabetical) */}
+      {orderedLabels.map((lbl) => (
         <SessionBoard key={lbl} title={LABEL_MAP[lbl]} teas={bubbleTeas} label={lbl} />
       ))}
     </Container>
