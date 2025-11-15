@@ -8,6 +8,7 @@ export interface BubbleTea {
   description: string;
   currency: string;
   price: number;
+  labels: string[];
 }
 
 

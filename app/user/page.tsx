@@ -4,7 +4,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { AppBar, Button, Toolbar, Typography, Box } from '@mui/material';
 import Container from '@mui/material/Container';
 import { useEffect, useState } from 'react';
-import ProductCard, { BubbleTea } from './(components)/ProductCard';
+import SessionBoard from './(components)/SessionBoard';
+import { LABEL_MAP } from './(components)/labelMap';
+import { BubbleTea } from './(components)/ProductCard';
 import bubbleTeasData from '../../data/bubbleTeas.json';
 
 
@@ -32,11 +34,10 @@ export default function UserPage() {
           </Button>
         </Toolbar>
       </AppBar>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mt: 4 }}>
-        {bubbleTeas.map((tea) => (
-          <ProductCard key={tea.id} tea={tea} />
-        ))}
-      </Box>
+      {/* Render a SessionBoard for every label defined in LABEL_MAP */}
+      {Object.keys(LABEL_MAP).map((lbl) => (
+        <SessionBoard key={lbl} title={LABEL_MAP[lbl]} teas={bubbleTeas} label={lbl} />
+      ))}
     </Container>
   );
 }
