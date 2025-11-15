@@ -1,0 +1,254 @@
+[
+  {
+    "id": 24,
+    "assetPath": "assam_black_tea.webp",
+    "name": "Assam Black Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 22,
+    "labels": ["original_tea"]
+  },
+  {
+    "id": 13,
+    "assetPath": "black_tea_latte.webp",
+    "name": "Black Tea Latte",
+    "description": "",
+    "currency": "HKD",
+    "price": 32,
+    "labels": ["tea_latte"]
+  },
+  {
+    "id": 11,
+    "assetPath": "brown_sugar_bubble_cocoa_milk.webp",
+    "name": "Brown Sugar Bubble Cocoa Milk",
+    "description": "Brown Sugar Bubble Cannot be Excluded",
+    "currency": "HKD",
+    "price": 40,
+    "labels": ["brown_sugar_bubble"]
+  },
+  {
+    "id": 1,
+    "assetPath": "brown_sugar_bubble_fresh_milk.webp",
+    "name": "Brown Sugar Bubble Fresh Milk",
+    "description": "Brown Sugar Bubble Cannot be Excluded",
+    "currency": "HKD",
+    "price": 38,
+    "labels": ["popular"]
+  },
+  {
+    "id": 9,
+    "assetPath": "brown_sugar_bubble_milk_tea.webp",
+    "name": "Brown Sugar Bubble Milk Tea",
+    "description": "Brown Sugar Bubble Cannot be Excluded",
+    "currency": "HKD",
+    "price": 32,
+    "labels": ["brown_sugar_bubble"]
+  },
+  {
+    "id": 2,
+    "assetPath": "brown_sugar_bubble_oolong_milk_tea.webp",
+    "name": "Brown Sugar Bubble Oolong Milk Tea",
+    "description": "Brown Sugar Bubble Cannot be Excluded",
+    "currency": "HKD",
+    "price": 33,
+    "labels": ["popular"]
+  },
+  {
+    "id": 10,
+    "assetPath": "brown_sugar_bubble_matcha_milk.webp",
+    "name": "Brown Sugar bubble Matcha Milk",
+    "description": "Brown Sugar Bubble Cannot be Excluded",
+    "currency": "HKD",
+    "price": 40,
+    "labels": ["brown_sugar_bubble"]
+  },
+  {
+    "id": 26,
+    "assetPath": "golden_oolong.webp",
+    "name": "Golden Oolong",
+    "description": "",
+    "currency": "HKD",
+    "price": 24,
+    "labels": ["original_tea"]
+  },
+  {
+    "id": 5,
+    "assetPath": "grapefruit_iced_tea.webp",
+    "name": "Grapefruit Iced Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 31,
+    "labels": ["popular", "fresh_fruit_tea"]
+  },
+  {
+    "id": 14,
+    "assetPath": "green_tea_latte.webp",
+    "name": "Green Tea Latte",
+    "description": "",
+    "currency": "HKD",
+    "price": 32,
+    "labels": ["tea_latte"]
+  },
+  {
+    "id": 25,
+    "assetPath": "jade_green_tea.webp",
+    "name": "Jade Green Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 22,
+    "labels": ["original_tea"]
+  },
+  {
+    "id": 16,
+    "assetPath": "lemon_iced_tea.webp",
+    "name": "Lemon Iced Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 31,
+    "labels": ["fresh_fruit_tea"]
+  },
+  {
+    "id": 6,
+    "assetPath": "leopard_taro_balls.webp",
+    "name": "Leopard Taro Balls",
+    "description": "Including Grass Jelly, Agar, Taro, Red Bean and Tapioca Balls",
+    "currency": "HKD",
+    "price": 45,
+    "labels": ["taro_balls"]
+  },
+  {
+    "id": 0,
+    "assetPath": "lychee_green_tea.webp",
+    "name": "Lychee Green Tea",
+    "description": "Iced Only",
+    "currency": "HKD",
+    "price": 31,
+    "labels": ["popular", "summer_specials"]
+  },
+  {
+    "id": 17,
+    "assetPath": "",
+    "name": "Mango Iced Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 33,
+    "labels": ["fresh_fruit_tea"]
+  },
+  {
+    "id": 27,
+    "assetPath": "mingjian_season_tea.webp",
+    "name": "Mingjian Season Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 24,
+    "labels": ["original_tea"]
+  },
+  {
+    "id": 15,
+    "assetPath": "oolong_tea_latte.webp",
+    "name": "Oolong Tea Latte",
+    "description": "",
+    "currency": "HKD",
+    "price": 33,
+    "labels": ["tea_latte"]
+  },
+  {
+    "id": 19,
+    "assetPath": "orange_green_tea.webp",
+    "name": "Orange Green Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 31,
+    "labels": ["fresh_fruit_tea"]
+  },
+  {
+    "id": 8,
+    "assetPath": "",
+    "name": "Osmanthus Oolong Milk Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 31,
+    "labels": ["summer_specials"]
+  },
+  {
+    "id": 7,
+    "assetPath": "osmanthus_oolong_tea.webp",
+    "name": "Osmanthus Oolong Tea",
+    "description": "Including Grass Jelly, Agar, Taro, Red Bean and Tapioca Balls",
+    "currency": "HKD",
+    "price": 28,
+    "labels": ["summer_specials"]
+  },
+  {
+    "id": 3,
+    "assetPath": "peach_oolong.webp",
+    "name": "Peach Oolong",
+    "description": "",
+    "currency": "HKD",
+    "price": 33,
+    "labels": ["popular", "fresh_fruit_tea"]
+  },
+  {
+    "id": 4,
+    "assetPath": "pineapple_iced_tea.webp",
+    "name": "Pineapple Iced Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 31,
+    "labels": ["popular", "fresh_fruit_tea"]
+  },
+  {
+    "id": 12,
+    "assetPath": "rock_salt_brown_sugar_bubble_fresh_milk.webp",
+    "name": "Rock Salt Brown Sugar Bubble Fresh Milk",
+    "description": "Brown Sugar Bubble Cannot be Excluded",
+    "currency": "HKD",
+    "price": 41,
+    "labels": ["brown_sugar_bubble"]
+  },
+  {
+    "id": 18,
+    "assetPath": "strawberry_iced_tea.webp",
+    "name": "Strawberry Iced Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 33,
+    "labels": ["fresh_fruit_tea"]
+  },
+  {
+    "id": 22,
+    "assetPath": "yakult_green_tea.webp",
+    "name": "Yakult Green Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 34,
+    "labels": ["yakult"]
+  },
+  {
+    "id": 20,
+    "assetPath": "yakult_orange_tea.webp",
+    "name": "Yakult Orange Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 34,
+    "labels": ["yakult"]
+  },
+  {
+    "id": 23,
+    "assetPath": "yakult_pineapple_tea.webp",
+    "name": "Yakult Pineapple Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": 34,
+    "labels": ["yakult"]
+  },
+  {
+    "id": 21,
+    "assetPath": "yakult_strawberry_tea.webp",
+    "name": "Yakult Strawberry Tea",
+    "description": "",
+    "currency": "HKD",
+    "price": -34,
+    "labels": ["yakult"]
+  }
+]
