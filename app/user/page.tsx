@@ -4,6 +4,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { AppBar, Button, Toolbar, Typography, Box } from '@mui/material';
 import Container from '@mui/material/Container';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 import SessionBoard from './(components)/SessionBoard';
 import { LABEL_MAP } from './(components)/labelMap';
 import { BubbleTea } from './(components)/ProductCard';
@@ -11,6 +12,7 @@ import bubbleTeasData from '../../data/bubbleTeas.json';
 
 
 export default function UserPage() {
+  const router = useRouter();
   const [bubbleTeas, setBubbleTeas] = useState<BubbleTea[]>([]);
 
   useEffect(() => {
@@ -35,6 +37,7 @@ export default function UserPage() {
             variant="outlined"
             endIcon={<ShoppingCartIcon />}
             sx={{ borderColor: 'white', color: 'white' }}
+            onClick={() => router.push('/cart')}
           >
             Cart
           </Button>
