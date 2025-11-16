@@ -3,21 +3,20 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { AppBar, Button, Toolbar, Typography, Box } from '@mui/material';
 import Container from '@mui/material/Container';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { useLiveQuery } from 'dexie-react-hooks';
 import SessionBoard from './(components)/SessionBoard';
 import { LABEL_MAP } from './(components)/labelMap';
-import { BubbleTea } from './(components)/ProductCard';
-import bubbleTeasData from '../../data/bubbleTeas.json';
+import { BubbleTeaService } from '../(services)/bubbleTeaService';
 
 
 export default function UserPage() {
   const router = useRouter();
-  const [bubbleTeas, setBubbleTeas] = useState<BubbleTea[]>([]);
+  const bubbleTeas = useLiveQuery(() => BubbleTeaService.getListedBubbleTeas(), []) || [];
 
   useEffect(() => {
-    // Normally you would fetch from an API, here we use static import
-    setBubbleTeas(bubbleTeasData);
+    BubbleTeaService.insertIfEmpty();
   }, []);
 
   // Prepare label ordering: Popular first, then the rest alphabetically by display name

@@ -52,7 +52,18 @@ export default function CartPage() {
   };
 
   return (
-    <Container sx={{ pt: 10, pb: 4 }}>
+    <Container sx={{ pt: 2, pb: 4 }}>
+      {/* Top Back Link */}
+      <Box sx={{ mb: 2, ml: 0 }}>
+        <Button
+          variant="outlined"
+          onClick={() => router.push('/user')}
+          sx={{ borderColor: 'primary.main', color: 'primary.main' }}
+        >
+          Back to Bubble Tea List
+        </Button>
+      </Box>
+
       <Typography variant="h5" sx={{ mb: 2 }}>
         Your Cart
       </Typography>
@@ -69,19 +80,6 @@ export default function CartPage() {
         >
           Order submitted successfully! Your cart has been cleared.
         </Alert>
-      )}
-
-      {/* Back link shown after success alert disappears */}
-      {showBack && (
-        <Box sx={{ mb: 2 }}>
-          <Typography
-            component="a"
-            onClick={() => router.push('/user')}
-            sx={{ cursor: 'pointer', color: 'primary.main', textDecoration: 'underline' }}
-          >
-            Back to Bubble Tea List
-          </Typography>
-        </Box>
       )}
 
       <Box>

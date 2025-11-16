@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { Box, Chip } from '@mui/material';
-import ProductCard, { BubbleTea } from './ProductCard';
+import ProductCard from './ProductCard';
+import { BubbleTea } from '@/dexie/db';
 import { labelToText } from './labelMap';
 
 interface SessionBoardProps {
